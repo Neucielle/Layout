@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./image/cronograma.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="logo">
+                <img src="./image/247968585-auntpolly-peakyblinders-ellen-mccrory.webp" alt="Ícone">
+                <h2>Polly Shelby</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia et nobis at atque laboriosam eius reiciendi.</p>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+                <li><a href="#">Link3</a></li>
+                <li><a href="#">Link4</a></li>
+            </ul>
+        </div>
+
+        <div class="caixa1">
+            <h1>Lista de Tarefas</h1>
+            <div class="tarefas">
+                <table>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Noite</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ol id="tarefas-dia">
+
+                            </ol>
+                            <form id="form-dia">
+                                <input type="text" id="nova-tarefa-dia" placeholder="Nova tarefa">
+                                <button type="button" onclick="adicionarTarefa('dia')">Adicionar</button>
+                            </form>
+                        </td>
+                        <td>
+                            <ol id="tarefas-noite">
+
+                            </ol>
+                            <form id="form-noite">
+                                <input type="text" id="nova-tarefa-noite" placeholder="Nova tarefa">
+                                <button type="button" onclick="adicionarTarefa('noite')">Adicionar</button>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>

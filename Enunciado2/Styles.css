@@ -1,0 +1,152 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(./image/pexels-catscoming-921797.jpg);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #ffffffbd;
+    box-shadow: 0 0 10px rgba(75, 3, 71, 0.9);
+    padding: 20px;
+    margin-top: 7%;
+}
+
+.menu {
+    flex: 1 0 200px; 
+    padding: 20px;
+}
+
+.menu .logo {
+    text-align: center;
+}
+
+.menu .logo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.menu .menu-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu .menu-links li {
+    margin-bottom: 10px;
+}
+
+.menu .menu-links a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: purple;
+    text-align: center;
+}
+
+.menu .menu-links a:hover {
+    background-color: #ffe0fd;
+    color: black;
+}
+
+.caixa1 {
+    flex: 2 0 60%;
+    padding: 20px;
+}
+
+.caixa1 h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tarefas {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tarefas-dia li, 
+#tarefas-noite li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#tarefas-dia li span,
+#tarefas-noite li span {
+    flex: 1;
+}
+
+#tarefas-dia .botoes,
+#tarefas-noite .botoes {
+    display: flex;
+    gap: 5px;
+}
+
+#tarefas-dia button,
+#tarefas-noite button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#tarefas-dia button:hover,
+#tarefas-noite button:hover {
+    background-color: #ffe0fd;
+    color: black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+form {
+    margin-top: 10px;
+}
+
+form input[type="text"] {
+    width: 70%;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+form button {
+    padding: 5px 10px;
+    background-color: purple;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #fbcaff;
+    color: black;
+}
+
